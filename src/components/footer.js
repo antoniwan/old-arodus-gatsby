@@ -2,37 +2,25 @@ import React from "react"
 import styled from "styled-components"
 
 import Container from "./container"
-import Introduction from "./introduction"
 
-const StyledHeader = styled.header`
+const StyledFooter = styled.footer`
+  margin-top: 3rem;
   background: linear-gradient(
-    68.9deg,
+    -68.9deg,
     rgba(144, 60, 240, 1) 46.3%,
     rgba(235, 88, 84, 1) 94.8%
   );
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
-  margin-bottom: 3rem;
   border-bottom: 2px solid black;
 
-  h1 {
-    margin-bottom: 0.25rem;
-    color: white;
-    text-shadow: 1px 2px 0px rgba(0, 0, 0, 1);
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
-  h2 {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    color: white;
-    margin-bottom: 1.25rem;
-    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
-  }
+
   p {
     color: white;
-    margin-bottom: 0.5rem;
-  }
-  p:last-child {
-    margin-bottom: 0;
   }
 
   a {
@@ -52,14 +40,18 @@ const StyledHeader = styled.header`
   }
 `
 
-const Header = () => {
+const Footer = () => {
   return (
-    <StyledHeader>
+    <StyledFooter>
       <Container>
-        <Introduction />
+        <p>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </p>
       </Container>
-    </StyledHeader>
+    </StyledFooter>
   )
 }
 
-export default Header
+export default Footer
