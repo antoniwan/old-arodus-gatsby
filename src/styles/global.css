@@ -1,6 +1,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Karma:400,700|Raleway:800");
 
+::selection {
+  background: black;
+  color: white;
+}
+
 html,
 body {
   font-family: "Karma", serif;
@@ -32,28 +37,46 @@ h3 {
 
 p {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 24px;
 }
 
-.boxlist {
+a:link,
+a:active,
+a:visited {
+  color: #903cf0;
+  transition: color 1s ease;
+}
+a:hover {
+  color: #eb5854;
+  transition: color 0.4s ease;
+}
+
+.box-list {
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
-  width: 100%;
-  list-style-type: square;
-  margin-left: 1.5rem;
-}
-.boxlist li {
-  border-radius: 5px;
-  line-height: 1;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-}
-.boxlist li div {
-  display: block;
   width: 100%;
 }
-.boxlist a {
-  text-decoration: none;
+.box-list li {
+  list-style-type: disc;
+  line-height: 24px;
+  flex-basis: calc(100% - 25px);
+  margin-left: 25px;
+}
+@media (min-width: 520px) {
+  .box-list li {
+    flex-basis: calc(50% - 25px);
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .box-list li {
+    flex-basis: calc(33% - 25px);
+  }
 }

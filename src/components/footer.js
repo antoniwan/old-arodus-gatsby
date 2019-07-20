@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
   );
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
-  border-bottom: 2px solid black;
+  border-top: 1px solid black;
 
   .container {
     padding-top: 1rem;
@@ -21,6 +21,8 @@ const StyledFooter = styled.footer`
 
   p {
     color: white;
+    text-align: right;
+    font-size: 0.8rem;
   }
 
   a {
@@ -47,7 +49,13 @@ const Footer = () => {
         <p>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a
+            href="https://www.gatsbyjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gatsby
+          </a>
         </p>
       </Container>
     </StyledFooter>

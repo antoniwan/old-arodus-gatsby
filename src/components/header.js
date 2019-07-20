@@ -29,7 +29,7 @@ const StyledHeader = styled.header`
   }
   p {
     color: white;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
   }
   p:last-child {
     margin-bottom: 0;
@@ -48,6 +48,12 @@ const StyledHeader = styled.header`
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 1.2rem;
     }
   }
 `
