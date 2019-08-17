@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
   margin-bottom: 3rem;
-  border-bottom: 4px solid black;
+  border-bottom: 1px solid rgba(114, 60, 240, 0.5);
 
   h1 {
     color: white;
@@ -57,7 +57,6 @@ const Header = () => {
     <StyledHeader>
       <Container>
         <Navigation />
-        <Introduction />
       </Container>
     </StyledHeader>
   )

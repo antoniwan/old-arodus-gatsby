@@ -2,15 +2,13 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledIntroduction = styled.div`
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 3rem;
 `
 
 function Introduction() {
   return (
     <StyledIntroduction>
-      <h1>Antonio Rodriguez</h1>
-      <h2>Software Engineer. Accidental Cofounder. Manager. Mentor.</h2>
       <p>
         I lead software engineering and innovation for a{" "}
         <a
