@@ -9,7 +9,7 @@
 html,
 body {
   font-family: "Karma", serif;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 h1,
@@ -20,14 +20,16 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-size: 2rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.4;
 }
 h3 {
@@ -36,8 +38,8 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
 a:link,
@@ -71,10 +73,10 @@ a:hover {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 3.8rem;
   }
   .box-list li {
     flex-basis: calc(33% - 25px);

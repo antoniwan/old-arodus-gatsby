@@ -1,6 +1,39 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
+import styled from "styled-components"
 
 import tools from "../data/tools"
+
+const StyledToolbox = styled.section`
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+`
+
+const StyledTool = styled.li`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+`
+
+const Tool = ({ title, desc, url }) => {
+  return (
+    <StyledTool key={`${title}-${Math.random()}`}>
+      <h4>{title}</h4>
+      <p>{desc}</p>
+    </StyledTool>
+  )
+}
 
 const toolbox = () => {
   const [filter, setFilter] = useState("all")
@@ -8,9 +41,7 @@ const toolbox = () => {
   const filteredTools = tools
     .filter(tool => {
       const { prod, learning, hobby, favorite, hidden } = tool.flags
-
       if (filter === "all") return !hidden
-
       switch (filter) {
         case "pro":
           return prod && !hidden
@@ -26,16 +57,11 @@ const toolbox = () => {
       return a.title > b.title ? 1 : -1
     })
 
-  const totalItems = filteredTools.length
-
-  console.log(`All Tools`, { tools })
-  console.log(`Filterd Tools`, { filteredTools })
-
   return (
-    <div>
-      <h2>toolbox</h2>
+    <StyledToolbox>
+      <h2>Skillset Tools</h2>
       <p>
-        Showing <strong>{totalItems}</strong> tools
+        Showing <strong>{filteredTools.length}</strong> tools
       </p>
 
       <div>
@@ -78,13 +104,10 @@ const toolbox = () => {
 
       <ul>
         {filteredTools.map(tool => (
-          <li key={`${tool.title}-${Math.random()}`}>
-            <h4>{tool.title}</h4>
-            <p>{tool.desc}</p>
-          </li>
+          <Tool {...tool} />
         ))}
       </ul>
-    </div>
+    </StyledToolbox>
   )
 }
 

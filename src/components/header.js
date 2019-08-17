@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Container from "./container"
+import Navigation from "./navigation"
 import Introduction from "./introduction"
 
 const StyledHeader = styled.header`
@@ -16,20 +17,16 @@ const StyledHeader = styled.header`
   border-bottom: 4px solid black;
 
   h1 {
-    margin-bottom: 0.25rem;
     color: white;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 1);
   }
   h2 {
-    font-size: 1.1rem;
     letter-spacing: 1px;
     color: white;
-    margin-bottom: 1.25rem;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
   }
   p {
     color: white;
-    margin-bottom: 1.25rem;
   }
   p:last-child {
     margin-bottom: 0;
@@ -52,9 +49,6 @@ const StyledHeader = styled.header`
   }
 
   @media (min-width: 1024px) {
-    h2 {
-      font-size: 1.2rem;
-    }
   }
 `
 
@@ -62,6 +56,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Container>
+        <Navigation />
         <Introduction />
       </Container>
     </StyledHeader>
