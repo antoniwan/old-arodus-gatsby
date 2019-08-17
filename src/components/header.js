@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
   margin-bottom: 3rem;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
 
   h1 {
     margin-bottom: 0.25rem;

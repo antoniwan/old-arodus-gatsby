@@ -12,7 +12,7 @@ function Introduction() {
       <h1>Antonio Rodriguez</h1>
       <h2>Software Engineer. Accidental Cofounder. Manager. Mentor.</h2>
       <p>
-        I lead software engineering and technology for a{" "}
+        I lead software engineering and innovation for a{" "}
         <a
           href="https://m8agency.com"
           target="_blank"

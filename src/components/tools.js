@@ -9,6 +9,8 @@ const StyledTools = styled.section`
     margin-bottom: 1.25rem;
   }
 `
+
+// filters: used in production, pro, learning, hobby, legacy
 export default function Tools() {
   const currentTools = [
     <a

@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
   );
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
-  border-top: 1px solid black;
+  border-top: 4px solid black;
 
   .container {
     padding-top: 1rem;
