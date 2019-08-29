@@ -1,15 +1,23 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Raleway:800&display=swap");
 
+:root {
+  --color-black: #232b2b;
+  --color-white: #ffffff;
+  --color-purple: #903cf0;
+  --color-pink: #eb5854;
+}
+
 ::selection {
-  background: black;
-  color: white;
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 html,
 body {
   font-family: "Merriweather", serif;
   font-size: 10px;
+  color: var(--color-black);
 }
 
 h1,
@@ -45,11 +53,11 @@ p {
 a:link,
 a:active,
 a:visited {
-  color: #903cf0;
+  color: var(--color-purple);
   transition: color 1s ease;
 }
 a:hover {
-  color: #eb5854;
+  color: var(--color-pink);
   transition: color 0.4s ease;
 }
 
