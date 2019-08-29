@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import icon from "../images/arod-icon.png"
+
 const StyledNavigation = styled.div`
   display: flex;
   flex-direction: row;
@@ -10,18 +10,23 @@ const StyledNavigation = styled.div`
   align-content: center;
   height: 60px;
 
+  a {
+    color: white;
+  }
+
   ul {
     display: flex;
   }
 
+  h1 {
+    color: white;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 1);
+  }
   h1,
   h1 a {
     line-height: 1;
     font-size: 1.8rem;
     text-decoration: none;
-  }
-  h1 img {
-    height: 35px;
   }
 
   nav {
@@ -29,10 +34,15 @@ const StyledNavigation = styled.div`
   }
 
   li {
-    margin-left: 12px;
+    margin-left: 20px;
     a {
       font-size: 1.2rem;
       line-height: 1;
+      font-weight: lighter;
+      &:hover {
+        color: black;
+        transition: all 0.2s;
+      }
     }
   }
 
@@ -45,11 +55,11 @@ const StyledNavigation = styled.div`
     nav {
       display: block;
       ul {
-        li, li a {
-            text-decoration: none;
-            font-size: 1.6rem;
-            line-height: 1;
-          }
+        li,
+        li a {
+          text-decoration: none;
+          font-size: 1.6rem;
+          line-height: 1;
         }
       }
     }

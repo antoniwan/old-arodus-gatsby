@@ -40,7 +40,7 @@ const toolbox = () => {
 
   const filteredTools = tools
     .filter(tool => {
-      const { prod, learning, hobby, favorite, hidden } = tool.flags
+      const { prod, learning, hobby, favorite, legacy, hidden } = tool.flags
       if (filter === "all") return !hidden
       switch (filter) {
         case "pro":
@@ -51,6 +51,8 @@ const toolbox = () => {
           return favorite && !hidden
         case "hobby":
           return hobby && !hidden
+        case "legacy":
+          return legacy && !hidden
       }
     })
     .sort((a, b) => {
@@ -59,10 +61,8 @@ const toolbox = () => {
 
   return (
     <StyledToolbox>
-      <h2>Skillset Tools</h2>
-      <p>
-        Showing <strong>{filteredTools.length}</strong> tools
-      </p>
+      <h2>I'm currently enjoying</h2>
+      <p>These tools greatly affect my daily work.</p>
 
       <div>
         <button
@@ -92,6 +92,13 @@ const toolbox = () => {
           }}
         >
           Hobbyist
+        </button>
+        <button
+          onClick={() => {
+            setFilter("legacy")
+          }}
+        >
+          Legacy
         </button>
         <button
           onClick={() => {
