@@ -6,6 +6,7 @@
   --color-white: #ffffff;
   --color-purple: #903cf0;
   --color-pink: #eb5854;
+  --max-container-width: 900px;
 }
 
 ::selection {
@@ -18,6 +19,10 @@ body {
   font-family: "Merriweather", serif;
   font-size: 10px;
   color: var(--color-black);
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1,
@@ -74,6 +79,7 @@ a:hover {
   flex-basis: calc(100% - 25px);
   margin-left: 25px;
 }
+
 @media (min-width: 520px) {
   .box-list li {
     flex-basis: calc(50% - 25px);
@@ -81,10 +87,16 @@ a:hover {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 2rem;
   }
   .box-list li {
     flex-basis: calc(33% - 25px);
