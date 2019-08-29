@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Karma:400,700|Raleway:800");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Raleway:800&display=swap");
 
 ::selection {
   background: black;
@@ -8,7 +8,7 @@
 
 html,
 body {
-  font-family: "Karma", serif;
+  font-family: "Merriweather", serif;
   font-size: 10px;
 }
 
