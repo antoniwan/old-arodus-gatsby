@@ -1,24 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled, { css } from "styled-components"
+import misc from "../libs/misc"
 
 const StyledLinks = styled.ul`
   display: flex;
   flex-direction: column;
-  background: var(--color-black);
-  opacity: 0;
   padding: 2rem 0;
-  transition: all 0.2s;
-  max-height: 0;
-  overflow: hidden;
-
-  ${props =>
-    props.isOpen &&
-    css`
-      opacity: 1;
-      max-height: 600px;
-      transition: all 0.2s;
-    `}
+  transition: all 0.2s ease;
 
   li {
   }
@@ -39,9 +28,6 @@ const StyledLinks = styled.ul`
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    background: transparent;
-    opacity: 1;
-    max-height: inherit;
 
     li {
       margin-left: 15px;
