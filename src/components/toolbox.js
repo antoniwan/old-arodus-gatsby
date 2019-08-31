@@ -4,20 +4,49 @@ import styled from "styled-components"
 import tools from "../data/tools"
 
 const StyledToolbox = styled.section`
-  ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 
   button {
-    border: none;
-    background: pink;
+    border: 2px solid var(--color-pink);
+    border-radius: 30px;
+    background: var(--color-white);
     padding: 5px 10px;
+    margin: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
     cursor: pointer;
+
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    padding: 0.6rem 1.6rem;
+    transition: all 0.2s;
 
     &.is-active {
       background: black;
       color: white;
+    }
+  }
+
+  .toolbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 30px;
+    border: 2px solid black;
+    overflow: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    li {
+      padding: 1rem 2rem;
     }
   }
 
@@ -31,19 +60,26 @@ const StyledToolbox = styled.section`
 const StyledTool = styled.li`
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #cccccc;
-  padding: 15px;
+  padding: 1rem 2rem 2rem 1rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+  }
 
   h4 {
     font-size: 1.6rem;
     line-height: 1.2;
     margin-bottom: 5px;
+    opacity: 0.9;
   }
 
   p {
     font-size: 1.4rem;
     font-weight: 100;
-    opacity: 0.6;
+    opacity: 0.4;
+    margin: 0;
   }
 `
 
@@ -92,9 +128,8 @@ const toolbox = () => {
   return (
     <StyledToolbox>
       <h2>Tools of the trade</h2>
-      <p>{tagLines[filter]}</p>
 
-      <div>
+      <div className="toolbox">
         <button
           className={`${filter === `favorites` ? "is-active" : ""}`}
           onClick={() => {
@@ -144,6 +179,8 @@ const toolbox = () => {
           All
         </button>
       </div>
+
+      <p>{tagLines[filter]}</p>
 
       <ul>
         {filteredTools.map(tool => (

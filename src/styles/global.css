@@ -7,6 +7,7 @@
   --color-purple: #903cf0;
   --color-pink: #eb5854;
   --max-container-width: 900px;
+  --color-light-gray: #cccccc;
 }
 
 ::selection {
@@ -19,6 +20,10 @@ body {
   font-family: "Merriweather", serif;
   font-size: 10px;
   color: var(--color-black);
+}
+
+button {
+  font-family: "Merriweather", serif;
 }
 
 body {
