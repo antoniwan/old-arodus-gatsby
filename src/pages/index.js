@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Toolbox from "../components/toolbox"
-import Tools from "../components/tools"
 import ContactMe from "../components/contactme"
 import profilepicture from "../images/profile-picture.jpg"
 
@@ -29,7 +27,7 @@ const IndexPage = () => (
       <figure className="full-width">
         <img
           src={profilepicture}
-          alt="Profile picture of Antonio Rodriguez, smiling"
+          alt="Antonio Rodriguez looking at the camera"
         />
       </figure>
       <h2>Software Engineer. Accidental Cofounder. Manager. Mentor.</h2>

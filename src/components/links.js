@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled, { css } from "styled-components"
-import misc from "../libs/misc"
+import styled from "styled-components"
 
 const StyledLinks = styled.ul`
   display: flex;

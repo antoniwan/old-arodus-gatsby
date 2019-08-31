@@ -127,6 +127,8 @@ const toolbox = () => {
           return hobby && !hidden
         case "legacy":
           return legacy && !hidden
+        default:
+          return prod && !hidden
       }
     })
     .sort((a, b) => {
