@@ -14,6 +14,10 @@ const StyledLayout = styled.div`
   h2 {
     margin-bottom: 1rem;
   }
+
+  .main-body-content {
+    min-height: calc(100vh - 61px - 51px - 2rem);
+  }
 `
 
 const Layout = ({ children }) => {
@@ -21,7 +25,7 @@ const Layout = ({ children }) => {
     <StyledLayout>
       <Header />
       <Container>
-        <main>{children}</main>
+        <main className="main-body-content">{children}</main>
       </Container>
       <Footer />
     </StyledLayout>
