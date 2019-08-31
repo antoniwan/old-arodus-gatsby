@@ -1,15 +1,33 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Karma:400,700|Raleway:800");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Raleway:800&display=swap");
+
+:root {
+  --color-black: #232b2b;
+  --color-white: #ffffff;
+  --color-purple: #903cf0;
+  --color-pink: #eb5854;
+  --max-container-width: 900px;
+  --color-light-gray: #cccccc;
+}
 
 ::selection {
-  background: black;
-  color: white;
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 html,
 body {
-  font-family: "Karma", serif;
-  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-size: 10px;
+  color: var(--color-black);
+}
+
+button {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1,
@@ -20,14 +38,16 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-size: 2rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 h3 {
@@ -36,18 +56,18 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
 a:link,
 a:active,
 a:visited {
-  color: #903cf0;
+  color: var(--color-purple);
   transition: color 1s ease;
 }
 a:hover {
-  color: #eb5854;
+  color: var(--color-pink);
   transition: color 0.4s ease;
 }
 
@@ -64,6 +84,31 @@ a:hover {
   flex-basis: calc(100% - 25px);
   margin-left: 25px;
 }
+
+img {
+  width: 100%;
+}
+
+.full-width {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+main {
+}
+
+@keyframes AnimateBGGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media (min-width: 520px) {
   .box-list li {
     flex-basis: calc(50% - 25px);
@@ -74,9 +119,24 @@ a:hover {
     font-size: 3rem;
   }
   h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
     font-size: 2rem;
   }
   .box-list li {
     flex-basis: calc(33% - 25px);
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .full-width {
+    margin-left: calc(-100vw / 2 + calc(var(--max-container-width)) / 2);
+    margin-right: calc(-100vw / 2 + calc(var(--max-container-width)) / 2);
   }
 }

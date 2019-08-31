@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Styled404 = styled.section`
+  padding-top: 2rem;
   h1,
   h2,
   p {
@@ -15,6 +16,8 @@ const Styled404 = styled.section`
     border: 2px solid black;
   }
 `
+
+const tag = `fail`
 
 const NotFoundPage = () => {
   const [loading, setLoading] = useState(false)
@@ -34,7 +37,7 @@ const NotFoundPage = () => {
         throw new Error(`Failed to retrieve Giphy gif with the tag: ${tag}`)
       }
     }
-    getRandomGiphy()
+    getRandomGiphy(tag)
   }, [])
 
   return (
@@ -42,7 +45,7 @@ const NotFoundPage = () => {
       <SEO title="404: Not found" />
       <Styled404>
         <h1>You have big 404 energy.</h1>
-        <p>Here's a random gif.</p>
+        <p>Here's a random "{tag}" gif.</p>
 
         {loading && <h3>Loading...</h3>}
 

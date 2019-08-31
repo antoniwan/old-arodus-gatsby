@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Section = styled.section`
   margin: 0 auto;
-  max-width: 900px;
+  max-width: var(--max-container-width);
   padding-left: 2rem;
   padding-right: 2rem;
 

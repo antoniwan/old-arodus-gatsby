@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
   );
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
-  border-top: 1px solid black;
+  border-top: 4px solid black;
 
   .container {
     padding-top: 1rem;
@@ -22,23 +22,13 @@ const StyledFooter = styled.footer`
   p {
     color: white;
     text-align: right;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 0 !important;
   }
 
   a {
     color: white;
-  }
-
-  @keyframes AnimateBGGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
   }
 `
 
