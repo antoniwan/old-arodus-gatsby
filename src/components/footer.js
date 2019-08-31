@@ -24,6 +24,7 @@ const StyledFooter = styled.footer`
     text-align: right;
     font-size: 1.2rem;
     font-weight: 100;
+    margin-bottom: 0 !important;
   }
 
   a {

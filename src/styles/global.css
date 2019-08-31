@@ -42,7 +42,7 @@ h1 {
   line-height: 1.2;
 }
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 h3 {
@@ -80,6 +80,27 @@ a:hover {
   margin-left: 25px;
 }
 
+img {
+  width: 100%;
+}
+
+.full-width {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+@keyframes AnimateBGGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media (min-width: 520px) {
   .box-list li {
     flex-basis: calc(50% - 25px);
@@ -100,5 +121,14 @@ a:hover {
   }
   .box-list li {
     flex-basis: calc(33% - 25px);
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .full-width {
+    margin-left: calc(-100vw / 2 + calc(var(--max-container-width)) / 2);
+    margin-right: calc(-100vw / 2 + calc(var(--max-container-width)) / 2);
   }
 }

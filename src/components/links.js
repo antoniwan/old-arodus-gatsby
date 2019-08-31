@@ -30,7 +30,7 @@ const StyledLinks = styled.ul`
     flex-direction: row;
 
     li {
-      margin-left: 15px;
+      margin-left: 2rem;
     }
     a {
       padding: 0;
@@ -49,23 +49,18 @@ const Links = ({ isOpen, handleClick }) => {
   return (
     <StyledLinks isOpen={isOpen}>
       <li>
-        <Link to="/about" onClick={handleClick}>
+        <Link to="/" onClick={handleClick}>
           About
+        </Link>
+      </li>
+      <li>
+        <Link to="/skillset-and-tools" onClick={handleClick}>
+          Skillsets & Tools
         </Link>
       </li>
       <li>
         <Link to="/work" onClick={handleClick}>
           Work
-        </Link>
-      </li>
-      <li>
-        <Link to="/blog" onClick={handleClick}>
-          Blog
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact" onClick={handleClick}>
-          Contact
         </Link>
       </li>
     </StyledLinks>
