@@ -13,21 +13,6 @@ const StyledHeader = styled.header`
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
   border-bottom: 1px solid var(--color-black);
-
-  @keyframes AnimateBGGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  @media (min-width: 1024px) {
-  }
 `
 
 const Header = () => {
