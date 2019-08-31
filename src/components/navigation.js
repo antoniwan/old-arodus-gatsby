@@ -4,7 +4,7 @@ import styled from "styled-components"
 import misc from "../libs/misc"
 import Logo from "../components/logo"
 import BurgerMenuIcon from "../components/burgermenuicon"
-import Links from "../components/Links"
+import Links from "../components/links"
 
 const StyledNavigation = styled.div`
   display: flex;
