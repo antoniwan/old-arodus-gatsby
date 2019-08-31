@@ -13,15 +13,6 @@ import {
 import { GoMail } from "react-icons/go"
 
 const StyledContactMe = styled.div`
-  border-left: 4px solid black;
-  padding: 25px;
-  background: #fcfcfc;
-  border-radius: 6px;
-  margin-top: 4rem;
-  margin-left: -25px;
-  margin-right: -25px;
-  margin-bottom: -52px;
-
   h2 {
     margin-bottom: 1.25rem;
   }
@@ -36,7 +27,7 @@ const StyledContactMe = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 72%;
+    width: 100%;
   }
   .social-list li {
     font-size: 2rem;
@@ -45,10 +36,6 @@ const StyledContactMe = styled.div`
   }
 
   @media (min-width: 1024px) {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-
     .social-list {
       width: 100%;
       justify-content: flex-start;
