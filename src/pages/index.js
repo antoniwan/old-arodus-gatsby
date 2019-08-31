@@ -23,10 +23,9 @@ const StyledAbout = styled.div`
 `
 
 const IndexPage = () => (
-  <StyledAbout>
-    <Layout>
-      <SEO title="About" />
-
+  <Layout>
+    <SEO title="Home" />
+    <StyledAbout>
       <figure className="full-width">
         <img
           src={profilepicture}
@@ -54,8 +53,8 @@ const IndexPage = () => (
         family.
       </p>
       <ContactMe />
-    </Layout>
-  </StyledAbout>
+    </StyledAbout>
+  </Layout>
 )
 
 export default IndexPage

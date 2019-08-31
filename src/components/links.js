@@ -63,6 +63,11 @@ const Links = ({ isOpen, handleClick }) => {
           Work
         </Link>
       </li>
+      <li>
+        <Link to="/blog" onClick={handleClick}>
+          Blog
+        </Link>
+      </li>
     </StyledLinks>
   )
 }
