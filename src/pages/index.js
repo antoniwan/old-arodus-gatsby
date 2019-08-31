@@ -32,6 +32,7 @@ const IndexPage = () => (
           alt="Profile picture of Antonio Rodriguez, smiling"
         />
       </figure>
+      <h2>Software Engineer. Accidental Cofounder. Manager. Mentor.</h2>
       <p>
         I lead software engineering and innovation for a{" "}
         <a

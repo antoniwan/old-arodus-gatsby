@@ -23,6 +23,7 @@ const StyledNavigation = styled.div`
     top: 61px;
     left: 0;
     width: 100%;
+    z-index: 2;
   }
 
   .desktop-menu {

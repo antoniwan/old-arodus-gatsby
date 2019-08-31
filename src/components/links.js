@@ -24,6 +24,11 @@ const StyledLinks = styled.ul`
     &:hover {
       color: var(--color-purple);
     }
+
+    &.active {
+      font-weight: bold;
+      border-left: 4px solid var(--color-pink);
+    }
   }
 
   @media (min-width: 1024px) {
@@ -41,6 +46,12 @@ const StyledLinks = styled.ul`
       &:hover {
         color: var(--color-black);
       }
+
+      &.active {
+        font-weight: normal;
+        border-left: none;
+        border-bottom: 1px solid var(--color-pink);
+      }
     }
   }
 `
@@ -49,22 +60,26 @@ const Links = ({ isOpen, handleClick }) => {
   return (
     <StyledLinks isOpen={isOpen}>
       <li>
-        <Link to="/" onClick={handleClick}>
+        <Link to="/" onClick={handleClick} activeClassName="active">
           About
         </Link>
       </li>
       <li>
-        <Link to="/skillset-and-tools" onClick={handleClick}>
+        <Link
+          to="/skillset-and-tools"
+          onClick={handleClick}
+          activeClassName="active"
+        >
           Skillsets & Tools
         </Link>
       </li>
       <li>
-        <Link to="/work" onClick={handleClick}>
+        <Link to="/work" onClick={handleClick} activeClassName="active">
           Work
         </Link>
       </li>
       <li>
-        <Link to="/blog" onClick={handleClick}>
+        <Link to="/blog" onClick={handleClick} activeClassName="active">
           Blog
         </Link>
       </li>
