@@ -14,6 +14,10 @@ const StyledNavigation = styled.div`
   align-content: center;
   height: 60px;
 
+  button {
+    padding: 0;
+  }
+
   .mobile-menu {
     position: absolute;
     top: 61px;
@@ -31,6 +35,7 @@ const StyledNavigation = styled.div`
     transition: max-height 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     background: var(--color-black);
     ${misc.black_food_background_css_string}
+    border-bottom: 1px solid var(--color-black);
 
     &.is-open {
       max-height: 600px;
