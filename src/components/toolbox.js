@@ -6,23 +6,44 @@ import tools from "../data/tools"
 const StyledToolbox = styled.section`
   ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  button {
+    border: none;
+    background: pink;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &.is-active {
+      background: black;
+      color: white;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    ul {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
   }
 `
 
 const StyledTool = styled.li`
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border-bottom: 1px solid #cccccc;
+  padding: 15px;
 
   h4 {
-    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
   }
 
   p {
-    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 100;
+    opacity: 0.6;
   }
 `
 
@@ -35,8 +56,17 @@ const Tool = ({ title, desc, url }) => {
   )
 }
 
+const tagLines = {
+  favorites: `These greatly affect my daily work.`,
+  learning: `I'm also focused on learning and mastering these.`,
+  pro: `I currently use these in production work.`,
+  hobby: `I use these for personal/fun projects and prototypes.`,
+  legacy: `"Remember that the most valuable antiques are dear old friends."`,
+  all: `These tools have helped become the professional I am today.`,
+}
+
 const toolbox = () => {
-  const [filter, setFilter] = useState("all")
+  const [filter, setFilter] = useState("favorites")
 
   const filteredTools = tools
     .filter(tool => {
@@ -61,11 +91,12 @@ const toolbox = () => {
 
   return (
     <StyledToolbox>
-      <h2>I'm currently enjoying</h2>
-      <p>These tools greatly affect my daily work.</p>
+      <h2>Tools of the trade</h2>
+      <p>{tagLines[filter]}</p>
 
       <div>
         <button
+          className={`${filter === `favorites` ? "is-active" : ""}`}
           onClick={() => {
             setFilter("favorites")
           }}
@@ -73,6 +104,7 @@ const toolbox = () => {
           Favorites
         </button>
         <button
+          className={`${filter === `pro` ? "is-active" : ""}`}
           onClick={() => {
             setFilter("pro")
           }}
@@ -80,6 +112,7 @@ const toolbox = () => {
           In production
         </button>
         <button
+          className={`${filter === `learning` ? "is-active" : ""}`}
           onClick={() => {
             setFilter("learning")
           }}
@@ -87,6 +120,7 @@ const toolbox = () => {
           Actively learning
         </button>
         <button
+          className={`${filter === `hobby` ? "is-active" : ""}`}
           onClick={() => {
             setFilter("hobby")
           }}
@@ -94,6 +128,7 @@ const toolbox = () => {
           Hobbyist
         </button>
         <button
+          className={`${filter === `legacy` ? "is-active" : ""}`}
           onClick={() => {
             setFilter("legacy")
           }}
@@ -101,6 +136,7 @@ const toolbox = () => {
           Legacy
         </button>
         <button
+          className={`${filter === `all` ? "is-active" : ""}`}
           onClick={() => {
             setFilter("all")
           }}
