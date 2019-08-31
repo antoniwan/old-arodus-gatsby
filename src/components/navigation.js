@@ -54,21 +54,24 @@ const StyledNavigation = styled.div`
 `
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleClick = () => {
+    setIsOpen(false)
+  }
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <StyledNavigation>
-      <Logo />
+      <Logo handleClick={handleClick} />
 
-      <BurgerMenuIcon
-        isOpen={isOpen}
-        handleClick={() => {
-          console.log("->", isOpen)
-          setIsOpen(!isOpen)
-        }}
-      />
+      <BurgerMenuIcon isOpen={isOpen} handleClick={toggleMenu} />
 
       <nav className={isOpen ? "is-open" : ""}>
-        <Links isOpen={isOpen} />
+        <Links isOpen={isOpen} handleClick={handleClick} />
       </nav>
     </StyledNavigation>
   )

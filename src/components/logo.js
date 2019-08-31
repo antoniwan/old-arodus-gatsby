@@ -22,10 +22,12 @@ const StyledLogo = styled.h1`
     }
   }
 `
-const Logo = () => {
+const Logo = ({ handleClick }) => {
   return (
     <StyledLogo>
-      <Link to="/">Antonio Rodriguez</Link>
+      <Link to="/" onClick={handleClick}>
+        Antonio Rodriguez
+      </Link>
     </StyledLogo>
   )
 }

@@ -59,20 +59,28 @@ const StyledLinks = styled.ul`
   }
 `
 
-const Links = ({ isOpen }) => {
+const Links = ({ isOpen, handleClick }) => {
   return (
     <StyledLinks isOpen={isOpen}>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" onClick={handleClick}>
+          About
+        </Link>
       </li>
       <li>
-        <Link to="/work">Work</Link>
+        <Link to="/work" onClick={handleClick}>
+          Work
+        </Link>
       </li>
       <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/blog" onClick={handleClick}>
+          Blog
+        </Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" onClick={handleClick}>
+          Contact
+        </Link>
       </li>
     </StyledLinks>
   )
