@@ -39,7 +39,7 @@ const StyledToolbox = styled.section`
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 30px;
+    border-radius: 15px;
     border: 2px solid black;
     overflow: hidden;
     padding-top: 1rem;
@@ -50,9 +50,17 @@ const StyledToolbox = styled.section`
     }
   }
 
+  .back-to-top {
+    margin-top: 2rem;
+  }
+
   @media (min-width: 1024px) {
     ul {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .back-to-top {
+      display: none;
     }
   }
 `
@@ -187,6 +195,15 @@ const toolbox = () => {
           <Tool {...tool} />
         ))}
       </ul>
+
+      <button
+        className="back-to-top"
+        onClick={() => {
+          window.scrollTo(0, 0)
+        }}
+      >
+        Back to top
+      </button>
     </StyledToolbox>
   )
 }
