@@ -15,6 +15,17 @@ const StyledNavigation = styled.div`
 
   nav {
     display: none;
+    position: absolute;
+    transition: all 0.2s;
+
+    &.is-open {
+      display: block;
+      opacity: 1;
+      top: 61px;
+      left: 0;
+      width: 100%;
+      background: var(--color-black);
+    }
   }
 
   @media (min-width: 1024px) {
@@ -25,11 +36,18 @@ const StyledNavigation = styled.div`
     nav {
       display: block;
       position: initial;
+      background: transparent;
+      opacity: 1;
+      visibility: initial;
 
       &.is-open {
+        opacity: 1;
+        display: block;
         top: initial;
         left: initial;
         width: initial;
+        position: inherit;
+        background: transparent;
       }
     }
   }
@@ -50,7 +68,7 @@ const Navigation = () => {
       />
 
       <nav className={isOpen ? "is-open" : ""}>
-        <Links />
+        <Links isOpen={isOpen} />
       </nav>
     </StyledNavigation>
   )
