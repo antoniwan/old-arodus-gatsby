@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContactMe from "../components/contactme"
-import profilepicture from "../images/profile-picture.jpg"
+import picture from "../images/photo-wgino.jpg"
 
 const StyledAbout = styled.div`
   img {
@@ -15,7 +15,7 @@ const StyledAbout = styled.div`
   @media (min-width: 1024px) {
     img {
       height: 400px;
-      object-position: center center;
+      object-position: center -280px;
     }
   }
 `
@@ -25,10 +25,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <StyledAbout>
       <figure className="full-width">
-        <img
-          src={profilepicture}
-          alt="Antonio Rodriguez looking at the camera"
-        />
+        <img src={picture} alt="Antonio Rodriguez looking at the camera" />
       </figure>
       <h2>Software Engineer. Accidental Cofounder. Manager. Mentor.</h2>
       <p>
