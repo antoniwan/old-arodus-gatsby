@@ -3,10 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const StyledBlog = styled.div`
-  padding-top: 2rem;
-  height: 80vh;
-`
+const StyledBlog = styled.div``
 
 const BlogPage = () => (
   <Layout>

@@ -22,7 +22,7 @@ const StyledNavigation = styled.div`
 
   .mobile-menu {
     position: absolute;
-    top: 61px;
+    top: 60px;
     left: 0;
     width: 100%;
     z-index: 2;

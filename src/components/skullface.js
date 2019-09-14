@@ -43,26 +43,18 @@ const StyledSkullface = styled.h1`
     }
 
     img {
-      position: absolute;
-      top: 0;
-      left: 0;
       transition: opacity 0.2s;
 
       &.skull {
-        height: 180px;
+        height: 80px;
       }
       &.face {
         opacity: 0;
         width: 154px;
-        left: -1px;
-        top: -2px;
       }
     }
 
     .skullface {
-      width: 150px;
-      height: 180px;
-      position: relative;
     }
   }
 `

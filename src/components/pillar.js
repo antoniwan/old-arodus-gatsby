@@ -11,12 +11,11 @@ const StyledPillar = styled.section`
   );
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
-  border-bottom: 1px solid var(--color-black);
   height: 60px;
   width: 100%;
 
   @media (min-width: 1024px) {
-    height: 100%;
+    min-height: 100vh;
   }
 `
 

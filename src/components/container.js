@@ -8,8 +8,8 @@ const Section = styled.section`
   padding-right: 2rem;
 
   @media screen and (min-width: 960px) {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 4rem;
+    padding-right: 4px;
   }
 `
 

@@ -50,8 +50,7 @@ export default function ContactMe() {
   return (
     <StyledContactMe>
       <p>
-        I'm open to mentoring, code reviews, projects or casual conversation.
-        Write me to{" "}
+        I'm always available for mentoring and projects so write me to{" "}
         <a href="mailto:antoniwan+arodus@gmail.com?subject=Hey,%20Antonio!">
           antoniwan@gmail.com
         </a>{" "}

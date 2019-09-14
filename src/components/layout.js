@@ -11,13 +11,9 @@ const StyledLayout = styled.div`
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 100vh;
 
   @media (min-width: 1024px) {
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 300px 1fr;
   }
   p {
     margin-bottom: 2rem;
@@ -30,10 +26,11 @@ const StyledLayout = styled.div`
   .main-body-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
+    height: 100%;
   }
 `
 

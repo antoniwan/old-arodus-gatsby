@@ -32,24 +32,30 @@ const StyledLinks = styled.ul`
 
   @media (min-width: 1024px) {
     flex-direction: column;
+    padding-bottom: 0;
 
     li {
-      margin-left: 2rem;
+      margin-top: 1rem;
     }
     a {
       padding: 0;
-      font-size: 1.6rem;
+      padding-right: 1rem;
+
+      font-size: 2rem;
       line-height: 1;
       text-decoration: none;
       text-shadow: none;
+      text-align: center;
       &:hover {
         color: var(--color-black);
       }
 
       &.active {
         font-weight: normal;
-        border-left: none;
-        border-bottom: 1px solid var(--color-pink);
+        border-bottom: none;
+        border: none;
+        color: var(--color-pink);
+        transition: all 0.2s;
       }
     }
   }
