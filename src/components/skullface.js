@@ -20,6 +20,7 @@ const StyledSkullface = styled.h1`
   img {
     &.skull {
       height: 42px;
+      width: 42px;
     }
   }
 
