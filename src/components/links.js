@@ -31,7 +31,7 @@ const StyledLinks = styled.ul`
   }
 
   @media (min-width: 1024px) {
-    flex-direction: row;
+    flex-direction: column;
 
     li {
       margin-left: 2rem;

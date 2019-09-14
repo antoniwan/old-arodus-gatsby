@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
+import Skullface from "../components/skullface"
 import misc from "../libs/misc"
-import Logo from "../components/logo"
 import BurgerMenuIcon from "../components/burgermenuicon"
 import Links from "../components/links"
 
@@ -44,6 +44,10 @@ const StyledNavigation = styled.div`
   }
 
   @media (min-width: 1024px) {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
     button {
       display: none;
     }
@@ -70,7 +74,7 @@ const Navigation = () => {
 
   return (
     <StyledNavigation>
-      <Logo handleClick={handleClick} />
+      <Skullface />
 
       <BurgerMenuIcon isOpen={isOpen} handleClick={toggleMenu} />
 

@@ -24,29 +24,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <StyledAbout>
-      <figure className="full-width">
-        <img src={picture} alt="Antonio Rodriguez looking at the camera" />
-      </figure>
-      <h2>Software Engineer. Accidental Cofounder. Manager. Mentor.</h2>
       <p>
-        I lead software engineering and innovation for a{" "}
-        <a
-          href="https://m8agency.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          marketing agency
-        </a>{" "}
-        in Miami, Florida. Away from screens, I love playing{" "}
-        <a
-          href="https://www.instagram.com/stories/highlights/17908582195073038/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          guitar
-        </a>
-        , eating and making tasty food, and spending time at home with my
-        family.
+        I enjoy building things. Some years ago, a friend and I founded a
+        company and sold it. I love being a dad and I wish I'd write more.
       </p>
       <ContactMe />
     </StyledAbout>

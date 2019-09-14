@@ -44,20 +44,20 @@ h6 {
 
 h1 {
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 h2 {
   font-size: 1.8rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 h3 {
   font-size: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 a:link,
@@ -92,9 +92,6 @@ img {
 .full-width {
   margin-left: -2rem;
   margin-right: -2rem;
-}
-
-main {
 }
 
 @keyframes AnimateBGGradient {
