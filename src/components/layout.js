@@ -4,12 +4,11 @@ import styled from "styled-components"
 
 import Container from "./container"
 import Pillar from "./pillar"
-import Footer from "./footer"
 
 const StyledLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   height: 100vh;
@@ -29,7 +28,12 @@ const StyledLayout = styled.div`
   }
 
   .main-body-content {
-    min-height: calc(100vh - 61px - 51px - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
   }
 `
 

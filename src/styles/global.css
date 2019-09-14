@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Raleway:800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 :root {
   --color-black: #232b2b;
@@ -17,13 +17,13 @@
 
 html,
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", serif;
   font-size: 10px;
   color: var(--color-black);
 }
 
 button {
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", serif;
 }
 
 body {

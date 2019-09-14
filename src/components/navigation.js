@@ -13,6 +13,8 @@ const StyledNavigation = styled.div`
   align-items: center;
   align-content: center;
   height: 60px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   button {
     padding: 0;

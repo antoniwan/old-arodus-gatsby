@@ -25,8 +25,9 @@ const IndexPage = () => (
     <SEO title="Home" />
     <StyledAbout>
       <p>
-        I enjoy building things. Some years ago, a friend and I founded a
-        company and sold it. I love being a dad and I wish I'd write more.
+        I enjoy building things for the web. Some years ago, a friend and I
+        founded a company and sold it. I love being a dad and I wish I'd write
+        more.
       </p>
       <ContactMe />
     </StyledAbout>

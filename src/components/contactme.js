@@ -72,7 +72,7 @@ export default function ContactMe() {
         >
           salsa
         </a>{" "}
-        playlists I created for you. Thanks for visiting!
+        playlists I created for you. Thank you for visiting!
       </p>
 
       <ul className="social-list">

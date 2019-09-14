@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import Container from "./container"
 import Navigation from "./navigation"
 
 const StyledPillar = styled.section`
@@ -13,8 +12,12 @@ const StyledPillar = styled.section`
   background-size: 500% 500%;
   animation: AnimateBGGradient 10s ease infinite;
   border-bottom: 1px solid var(--color-black);
+  height: 60px;
   width: 100%;
-  height: 100%;
+
+  @media (min-width: 1024px) {
+    height: 100%;
+  }
 `
 
 const Pillar = () => {

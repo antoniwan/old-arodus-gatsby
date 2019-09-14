@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import skullface from "../images/arod-icon.png"
-import facepic from "../images/facepic.png"
+// import facepic from "../images/facepic.png"
 
 const StyledSkullface = styled.h1`
   color: white;
@@ -15,6 +15,16 @@ const StyledSkullface = styled.h1`
     font-size: 1.8rem;
     text-decoration: none;
     color: var(--color-white);
+  }
+
+  img {
+    &.skull {
+      height: 42px;
+    }
+  }
+
+  .skullface {
+    height: 100%;
   }
 
   @media (min-width: 1024px) {
@@ -38,7 +48,8 @@ const StyledSkullface = styled.h1`
       left: 0;
       transition: opacity 0.2s;
 
-      &.skullface {
+      &.skull {
+        height: 180px;
       }
       &.face {
         opacity: 0;
@@ -56,31 +67,35 @@ const StyledSkullface = styled.h1`
   }
 `
 const Skullface = ({ handleClick }) => {
+  let count = 0
   const logMouseActivity = () => {
-    console.log("hi")
-    return true
+    count++
+    talk()
+    return
   }
 
-  useEffect(() => {
-    window.addEventListener("mouseenter", logMouseActivity)
-    return () => {
-      window.removeEventListener("mouseenter", logMouseActivity)
+  const talk = () => {
+    if (count === 4) {
+      alert("are you bored?")
     }
-  })
+  }
+
   return (
     <StyledSkullface>
       <Link to="/" onClick={handleClick}>
         <div className="skullface">
+          {/* <div className="skullface" onMouseOver={logMouseActivity}> */}
+
           <img
             className="skull"
             src={skullface}
             alt="A skull with horn-rimmed eyeglasses"
           />
-          <img
+          {/* <img
             className="face"
             src={facepic}
             alt="A smiling man with horm-rimmed eyeglasses"
-          />
+          /> */}
         </div>
       </Link>
     </StyledSkullface>
