@@ -49,6 +49,7 @@ const StyledSkullface = styled.h1`
 
       &.skull {
         height: 80px;
+        width: 80px;
       }
       &.face {
         opacity: 0;
