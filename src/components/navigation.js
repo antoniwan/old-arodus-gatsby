@@ -14,7 +14,7 @@ const StyledNavigation = styled.div`
   align-content: center;
   height: 60px;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
 
   button {
     padding: 0;
@@ -48,7 +48,7 @@ const StyledNavigation = styled.div`
   @media (min-width: 1024px) {
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     button {
       display: none;

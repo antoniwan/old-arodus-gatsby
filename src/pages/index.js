@@ -11,13 +11,19 @@ const StyledAbout = styled.div`
     width: 300px;
     object-fit: cover;
     margin-bottom: 3rem;
-    margin-top: 4rem;
-    border-radius: 25px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: block;
   }
 
   @media (min-width: 1024px) {
     img {
       margin-top: 0;
+      border-radius: 25px;
+      height: 300px;
+      width: 300px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 `
@@ -26,7 +32,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <StyledAbout>
-      <img src={picture} alt="" />
+      <img
+        src={picture}
+        alt="Antonio Rodriguez, wearing a pink polo shirt and horn-rimmed glasses and a smile."
+      />
       <p>
         Hello! My name is Antonio and I enjoy building things for the web. Some
         years ago, a friend and I founded a company and later sold it. I love

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
@@ -29,6 +29,7 @@ const StyledSkullface = styled.h1`
 
   @media (min-width: 1024px) {
     font-size: 3rem;
+    padding-top: 10rem;
 
     a {
       font-size: 3rem;
@@ -59,18 +60,18 @@ const StyledSkullface = styled.h1`
   }
 `
 const Skullface = ({ handleClick }) => {
-  let count = 0
-  const logMouseActivity = () => {
-    count++
-    talk()
-    return
-  }
+  // let count = 0
+  // const logMouseActivity = () => {
+  //   count++
+  //   talk()
+  //   return
+  // }
 
-  const talk = () => {
-    if (count === 4) {
-      alert("are you bored?")
-    }
-  }
+  // const talk = () => {
+  //   if (count === 4) {
+  //     alert("are you bored?")
+  //   }
+  // }
 
   return (
     <StyledSkullface>

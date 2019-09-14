@@ -16,6 +16,7 @@ const StyledPillar = styled.section`
 
   @media (min-width: 1024px) {
     min-height: 100vh;
+    height: 100%;
   }
 `
 

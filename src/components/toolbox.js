@@ -4,7 +4,6 @@ import styled from "styled-components"
 import tools from "../data/tools"
 
 const StyledToolbox = styled.section`
-  padding-top: 2rem;
   padding-bottom: 4rem;
 
   button {
@@ -132,7 +131,7 @@ const toolbox = () => {
       }
     })
     .sort((a, b) => {
-      return a.title > b.title ? 1 : -1
+      return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1
     })
 
   return (

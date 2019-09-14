@@ -11,10 +11,9 @@ const StyledLayout = styled.div`
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  width: 100%;
+  height: 100%;
 
-  @media (min-width: 1024px) {
-    grid-template-columns: 300px 1fr;
-  }
   p {
     margin-bottom: 2rem;
   }
@@ -26,11 +25,16 @@ const StyledLayout = styled.div`
   .main-body-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 300px 1fr;
+
+    .main-body-content {
+      margin-top: 4rem;
+    }
   }
 `
 
@@ -38,9 +42,10 @@ const Layout = ({ children }) => {
   return (
     <StyledLayout>
       <Pillar />
-      <Container>
-        <main className="main-body-content">{children}</main>
-      </Container>
+
+      <main className="main-body-content">
+        <Container>{children}</Container>
+      </main>
     </StyledLayout>
   )
 }
