@@ -8,9 +8,12 @@ import {
 } from "react-icons/ti"
 
 const StyledPostActions = styled.div`
+  border-top: 1px solid var(--color-light-gray);
+
   ul {
     display: flex;
     justify-content: space-around;
+    margin-top: 12px;
   }
 
   li {
@@ -87,19 +90,50 @@ const StyledPost = styled.section`
   }
 
   .content {
-    margin: 8px 0;
+    margin: 0 0 12px 0;
     font-size: 1.4rem;
     line-height: 1.2;
   }
+
+  .coverPicture {
+    position: relative;
+    margin-left: -13px;
+    margin-right: -13px;
+    height: 200px;
+    border-top: 1px solid #dddfe2;
+    border-bottom: 1px solid #dddfe2;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
 `
 
-const Post = ({ content }) => (
-  <StyledPost>
-    <div className="post-wrapper">
-      <div className="content">{content}</div>
-      <PostActions />
-    </div>
-  </StyledPost>
-)
+const Post = ({ title, content, coverImage }) => {
+  return (
+    <StyledPost>
+      <div className="post-wrapper">
+        {title && (
+          <div className="title">
+            <h3>{title}</h3>
+          </div>
+        )}
+
+        <div className="content">{content}</div>
+
+        {coverImage && (
+          <figure className="coverPicture">
+            <img src={coverImage} alt="" />
+          </figure>
+        )}
+
+        <PostActions />
+      </div>
+    </StyledPost>
+  )
+}
 
 export default Post
