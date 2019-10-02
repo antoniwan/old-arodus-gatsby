@@ -108,7 +108,7 @@ const tagLines = {
   all: `These tools have helped become the professional I am today.`,
 }
 
-const toolbox = () => {
+const Toolbox = () => {
   const [filter, setFilter] = useState("favorites")
 
   const filteredTools = tools
@@ -209,4 +209,4 @@ const toolbox = () => {
   )
 }
 
-export default toolbox
+export default Toolbox

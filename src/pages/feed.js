@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import uuidv1 from "uuid/v1"
 import Layout from "../components/layout"
 import Post from "../components/post"
 import SEO from "../components/seo"
@@ -24,6 +25,7 @@ const posts = [
     path: `/test-post`,
     coverImage: ``,
     authorID: `antoniwan`,
+    date: new Date(2019, 9, 11),
   },
   {
     content: (
@@ -35,6 +37,7 @@ const posts = [
     url: ``,
     path: `/test-post`,
     authorID: `antoniwan`,
+    date: new Date(2019, 9, 11),
   },
   {
     title: `This is a title.`,
@@ -49,6 +52,7 @@ const posts = [
     path: `/test-post`,
     coverImage: `https://images.unsplash.com/photo-1568839735394-bd203c82837e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80`,
     authorID: `antoniwan`,
+    date: new Date(2019, 9, 11),
   },
   {
     title: `This is a title text.`,
@@ -63,6 +67,7 @@ const posts = [
     path: `/test-post`,
     coverImage: `https://images.unsplash.com/photo-1568839735394-bd203c82837e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80`,
     authorID: `antoniwan`,
+    date: new Date(2019, 9, 11),
   },
   {
     title: `This is a title text.`,
@@ -76,6 +81,7 @@ const posts = [
     url: ``,
     path: `/test-post`,
     authorID: `antoniwan`,
+    date: new Date(2019, 9, 11),
   },
   {
     content: (
@@ -94,6 +100,7 @@ const posts = [
     path: `/test-post`,
     coverImage: `https://images.unsplash.com/photo-1568839735394-bd203c82837e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80`,
     authorID: `antoniwan`,
+    date: new Date(2019, 9, 11),
   },
 ]
 
@@ -101,18 +108,22 @@ const FeedPage = () => (
   <>
     <SEO title="My blog is under construction" />
     <StyledFeed>
-      {posts.map(({ title, content, url, path, coverImage, authorID }) => {
-        return (
-          <Post
-            title={title}
-            content={content}
-            url={url}
-            path={path}
-            coverImage={coverImage}
-            authorID={authorID}
-          />
-        )
-      })}
+      {posts.map(
+        ({ title, content, url, path, coverImage, authorID, date }) => {
+          return (
+            <Post
+              key={uuidv1()}
+              title={title}
+              content={content}
+              url={url}
+              path={path}
+              coverImage={coverImage}
+              authorID={authorID}
+              date={date}
+            />
+          )
+        }
+      )}
     </StyledFeed>
   </>
 )

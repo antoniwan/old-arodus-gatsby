@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import format from "date-fns/format"
 import {
   TiThumbsUp,
   TiThumbsDown,
@@ -112,13 +113,14 @@ const StyledPost = styled.section`
   }
 `
 
-const Post = ({ title, content, coverImage }) => {
+const Post = ({ title, content, coverImage, date }) => {
   return (
     <StyledPost>
       <div className="post-wrapper">
         {title && (
           <div className="title">
             <h3>{title}</h3>
+            <h4>{format(date, "MM/dd/yyyy")}</h4>
           </div>
         )}
 
