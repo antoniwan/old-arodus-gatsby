@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import uuidv1 from "uuid/v1"
-import Layout from "../components/layout"
 import Post from "../components/post"
 import SEO from "../components/seo"
 
