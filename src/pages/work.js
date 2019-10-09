@@ -70,7 +70,7 @@ const WorkPage = () => {
         <h2>Work, work, work, work, work, work!</h2>
         <p style={{ marginBottom: "4rem" }}>
           Besides building my own companies, I've built stuff for many brands.
-          IMHO, the best part about being a software developer for a marketing
+          IMHO the best part about being a software developer for a marketing
           agency is the wild variability of projects (scope, lifespan,
           technologies, stakeholders, timelines).
         </p>

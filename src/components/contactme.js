@@ -18,12 +18,8 @@ export default function ContactMe() {
   return (
     <StyledContactMe>
       <p>
-        I'm always available for mentoring and projects so write me to{" "}
-        <a href="mailto:antoniwan+arodus@gmail.com?subject=Hey,%20Antonio!">
-          antoniwan@gmail.com
-        </a>{" "}
-        or check out my social media links below. After you follow me, check out
-        the sick{" "}
+        Need help with a project? Contact me through the links below. Still
+        here? Check out the sick{" "}
         <a
           target="_blank"
           href="https://open.spotify.com/user/antoniwan/playlist/18Fchy5u9YkOvUqtAKqMj1"

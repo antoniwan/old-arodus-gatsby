@@ -34,12 +34,12 @@ const IndexPage = () => (
     <StyledAbout>
       <img
         src={picture}
-        alt="Antonio Rodriguez, wearing a pink polo shirt and horn-rimmed glasses and a smile."
+        alt="Antonio Rodriguez, wearing a pink dress shirt and horn-rimmed glasses and a smile."
       />
       <p>
-        Hello! My name is Antonio and I enjoy building things for the web. Some
+        Hello! My name is Antonio, and I enjoy building things for the web. Some
         years ago, a friend and I founded a company and later sold it. I love
-        being a dad and I wish I'd write more.
+        being a dad, and I wish I'd write more.
       </p>
       <ContactMe />
     </StyledAbout>
