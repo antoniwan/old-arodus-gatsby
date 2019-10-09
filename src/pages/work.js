@@ -2,11 +2,47 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import brands from "../data/Brands"
-import BrandItem from "../components/BrandItem"
 
-const StyledBrandList = styled.div``
+const StyledBrandItem = styled.div`
+  display: flex;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media (min-width: 920px) {
+    img {
+      max-height: 55px;
+      max-width: 100px;
+    }
+  }
+`
+
+const BrandItem = ({ alt, logo }) => {
+  const imageSource = require(`../images/brands/${logo}`)
+  return (
+    <StyledBrandItem>
+      <img src={imageSource} title={alt} alt={alt} />
+    </StyledBrandItem>
+  )
+}
+
+const StyledBrandList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  margin-bottom: 4rem;
+
+  @media (min-width: 920px) {
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+  }
+`
 
 const BrandList = () => {
   return (
@@ -20,26 +56,28 @@ const BrandList = () => {
   )
 }
 
-const StyledWork = styled.div``
+const StyledWork = styled.div`
+  p {
+    /* the first paragraph has inline styles */
+  }
+`
 
 const WorkPage = () => {
-  console.log(brands)
   return (
     <Layout>
       <SEO title="This work page is under construction" />
       <StyledWork>
-        <h2>Work work work work work!</h2>
-        <p>
+        <h2>Work, work, work, work, work, work!</h2>
+        <p style={{ marginBottom: "4rem" }}>
           Besides building my own companies, I've built stuff for many brands.
+          IMHO, the best part about being a software developer for a marketing
+          agency is the wild variability of projects (scope, lifespan,
+          technologies, stakeholders, timelines).
         </p>
+
         <BrandList />
-        <p>
-          Because of the nature of work that we do at agencies I'm not able to
-          display most of my work. Sorry!{" "}
-          <span role="img" aria-label="Nervous Smile Emoji">
-            😅
-          </span>
-        </p>
+
+        <p>Let's work together!</p>
       </StyledWork>
     </Layout>
   )

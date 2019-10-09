@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-
+import uuid from "uuid/v1"
 import tools from "../data/tools"
 
 const StyledToolbox = styled.section`
@@ -92,7 +92,7 @@ const StyledTool = styled.li`
 
 const Tool = ({ title, desc, url }) => {
   return (
-    <StyledTool key={`${title}-${Math.random()}`}>
+    <StyledTool key={uuid()}>
       <h4>{title}</h4>
       <p>{desc}</p>
     </StyledTool>
@@ -193,7 +193,7 @@ const Toolbox = () => {
 
       <ul>
         {filteredTools.map(tool => (
-          <Tool {...tool} />
+          <Tool key={uuid()} {...tool} />
         ))}
       </ul>
 

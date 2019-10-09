@@ -5,6 +5,11 @@ export default [
     site_url: null,
   },
   {
+    name: "KFC",
+    logo_filename: "kfc.png",
+    site_url: null,
+  },
+  {
     name: "DEWALT",
     logo_filename: "dewalt.png",
     site_url: null,
@@ -15,8 +20,23 @@ export default [
     site_url: null,
   },
   {
+    name: "BLACK+DECKER",
+    logo_filename: "blackanddecker.png",
+    site_url: null,
+  },
+  {
     name: "Starwood Hotels and Resorts",
     logo_filename: "starwood.jpg",
+    site_url: null,
+  },
+  {
+    name: "Avocados From Mexico",
+    logo_filename: "afm.gif",
+    site_url: null,
+  },
+  {
+    name: "Culligan Water",
+    logo_filename: "culliganwater.png",
     site_url: null,
   },
   {
