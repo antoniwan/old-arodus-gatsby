@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: `Antonio Rodriguez`,
-    description: `Software engineer living in Miami, Florida. Knows what he's doing 60% the time. Will work for food.`,
+    description: `Fullstack developer, accidental cofounder and manager, living in Miami, Florida. I know what I'm doing 60% of the time.`,
     author: `@antoniwan`,
+    siteUrl: `https://antoniorodriguez.us`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/feed"],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
