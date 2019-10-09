@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import brands from "../data/Brands"
+import brands from "../data/brands"
 
 const StyledBrandItem = styled.div`
   display: flex;
