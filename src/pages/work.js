@@ -65,7 +65,7 @@ const StyledWork = styled.div`
 const WorkPage = () => {
   return (
     <Layout>
-      <SEO title="This work page is under construction" />
+      <SEO title="Work, work, work, work, work, work!" />
       <StyledWork>
         <h2>Work, work, work, work, work, work!</h2>
         <p style={{ marginBottom: "4rem" }}>
