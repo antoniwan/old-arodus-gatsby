@@ -25,7 +25,7 @@ export default [
   {
     title: "Node.js",
     desc:
-      "Javascript server-side runtime for client-side and back-end applications",
+      "JavaScript server-side runtime for client-side and back-end applications",
     flags: {
       prod: true,
       learning: false,
@@ -70,7 +70,7 @@ export default [
   },
   {
     title: "Grunt",
-    desc: "Javascript Task Runner",
+    desc: "JavaScript Task Runner",
     flags: {
       prod: true,
       learning: false,
@@ -81,7 +81,7 @@ export default [
   },
   {
     title: "Webpack",
-    desc: "javascript Module bundler",
+    desc: "JavaScript Module bundler",
     flags: {
       prod: true,
       hobby: true,
@@ -92,7 +92,7 @@ export default [
   },
   {
     title: "TypeScript",
-    desc: "typed superset of Javascript",
+    desc: "typed superset of JavaScript",
     flags: {
       prod: true,
       learning: false,
@@ -102,10 +102,10 @@ export default [
     },
   },
   {
-    title: "Angular.js",
-    desc: "front-end Javascript library",
+    title: "Angular.js (1.7.9)",
+    desc: "front-end JavaScript library",
     flags: {
-      prod: true,
+      prod: false,
       learning: false,
       hobby: false,
       legacy: true,
@@ -114,9 +114,9 @@ export default [
   },
   {
     title: "Angular",
-    desc: "monolithic Javascript framework",
+    desc: "monolithic JavaScript framework",
     flags: {
-      prod: true,
+      prod: false,
       learning: false,
       hobby: false,
       legacy: true,
@@ -125,7 +125,7 @@ export default [
   },
   {
     title: "React",
-    desc: "Javascript library for building user interfaces",
+    desc: "JavaScript library for building user interfaces",
     flags: {
       prod: true,
       learning: true,
@@ -238,7 +238,7 @@ export default [
   },
   {
     title: "React Native",
-    desc: "build native mobile apps using Javascript and React",
+    desc: "build native mobile apps using JavaScript and React",
     flags: {
       prod: false,
       learning: true,
@@ -304,7 +304,7 @@ export default [
   },
   {
     title: "CoffeeScript",
-    desc: "Javascript subset language",
+    desc: "JavaScript subset language",
     flags: {
       prod: true,
       learning: false,
@@ -383,12 +383,12 @@ export default [
   },
   {
     title: "Redux",
-    desc: "state container for Javascript apps",
+    desc: "state container for JavaScript apps",
     flags: {
       prod: true,
-      learning: true,
-      hobby: true,
-      legacy: false,
+      learning: false,
+      hobby: false,
+      legacy: true,
       hidden: false,
     },
   },
@@ -396,7 +396,7 @@ export default [
     title: "Apache Cordova",
     desc: "mobile development framework",
     flags: {
-      prod: true,
+      prod: false,
       learning: false,
       hobby: false,
       legacy: true,
@@ -412,6 +412,18 @@ export default [
       hobby: true,
       legacy: true,
       hidden: false,
+    },
+  },
+  {
+    title: "Adobe XD",
+    desc: "vector-based design tool",
+    flags: {
+      prod: true,
+      learning: true,
+      hobby: true,
+      legacy: false,
+      hidden: false,
+      favorite: true,
     },
   },
   {
@@ -438,21 +450,44 @@ export default [
   },
   {
     title: "ES6",
-    desc: "javascript language update",
+    desc: "JavaScript language update",
     flags: {
       prod: true,
       learning: false,
       hobby: true,
       legacy: false,
-      hidden: false,
+      hidden: true,
     },
   },
   {
     title: "ES7",
-    desc: "javascript language update",
+    desc: "JavaScript language update",
     flags: {
-      prod: false,
+      prod: true,
       learning: true,
+      hobby: true,
+      legacy: false,
+      hidden: true,
+    },
+  },
+  {
+    title: "ES8",
+    desc: "JavaScript language update",
+    flags: {
+      prod: true,
+      learning: true,
+      hobby: true,
+      legacy: false,
+      hidden: true,
+    },
+  },
+  {
+    title: "ES9",
+    desc: "JavaScript language update",
+    flags: {
+      favorite: true,
+      prod: true,
+      learning: false,
       hobby: true,
       legacy: false,
       hidden: false,
@@ -470,7 +505,7 @@ export default [
     },
   },
   {
-    title: "Javascript",
+    title: "JavaScript",
     desc: "glorious programming language",
     flags: {
       prod: true,
@@ -538,7 +573,7 @@ export default [
   },
   {
     title: "jQuery",
-    desc: "Javascript library",
+    desc: "JavaScript library",
     flags: {
       prod: true,
       learning: false,
@@ -686,7 +721,7 @@ export default [
   },
   {
     title: "Jest",
-    desc: "Javascript testing solution",
+    desc: "JavaScript testing solution",
     flags: {
       prod: true,
       learning: true,
@@ -720,7 +755,7 @@ export default [
   },
   {
     title: "Babel",
-    desc: "Javascript compiler",
+    desc: "JavaScript compiler",
     flags: {
       prod: true,
       learning: false,
@@ -798,7 +833,7 @@ export default [
   },
   {
     title: "ESLint",
-    desc: "linting utility for Javascript and JSX",
+    desc: "linting utility for JavaScript and JSX",
     flags: {
       prod: true,
       learning: false,
@@ -889,7 +924,31 @@ export default [
     },
   },
   {
-    title: "toggle",
+    title: "vue.js",
+    desc: "JavaScript framework",
+    flags: {
+      prod: true,
+      learning: true,
+      hobby: false,
+      legacy: false,
+      hidden: false,
+      favorite: true,
+    },
+  },
+  {
+    title: "Acquia Cloud Site Factory",
+    desc: "superpowers Drupal",
+    flags: {
+      prod: true,
+      learning: false,
+      hobby: false,
+      legacy: false,
+      hidden: false,
+      favorite: false,
+    },
+  },
+  {
+    title: "toggl.com",
     desc: "time tracker",
     flags: {
       prod: true,
@@ -913,7 +972,7 @@ export default [
     },
   },
   {
-    title: "Spectacle",
+    title: "Rectangle",
     desc: "mac os window control app",
     flags: {
       prod: true,
@@ -944,7 +1003,7 @@ export default [
       learning: false,
       hobby: true,
       legacy: false,
-      hidden: false,
+      hidden: true,
       favorite: true,
     },
   },

@@ -117,7 +117,7 @@ const Toolbox = () => {
       if (filter === "all") return !hidden
       switch (filter) {
         case "pro":
-          return prod && !hidden
+          return prod && !hidden && !legacy
         case "learning":
           return learning && !hidden
         case "favorites":
