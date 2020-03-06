@@ -20,15 +20,15 @@ const StyledSocialIcons = styled.ul`
 
   li {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     padding-bottom: 0;
   }
 
   @media (min-width: 1024px) {
     width: 100%;
-    justify-content: flex-start;
 
     li {
+      padding: 1rem;
       padding-bottom: 0;
     }
   }

@@ -84,9 +84,13 @@ const Links = ({ isOpen, handleClick }) => {
         </Link>
       </li>
       <li>
-        <Link to="/blog" onClick={handleClick} activeClassName="active">
-          Blog
-        </Link>
+        <a
+          href="https://abunchofideas.com/?utm_source=website&utm_medium=link&utm_campaign=arodus"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blog <sup>🔗</sup>
+        </a>
       </li>
     </StyledLinks>
   )

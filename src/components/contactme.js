@@ -17,9 +17,9 @@ const StyledContactMe = styled.div`
 export default function ContactMe() {
   return (
     <StyledContactMe>
+      <p>Need help with a project? Contact me through the links below.</p>
       <p>
-        Need help with a project? Contact me through the links below. Still
-        here? Check out the sick{" "}
+        Still here? Check out the sick{" "}
         <a
           target="_blank"
           href="https://open.spotify.com/user/antoniwan/playlist/18Fchy5u9YkOvUqtAKqMj1"
