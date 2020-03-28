@@ -89,7 +89,15 @@ const Links = ({ isOpen, handleClick }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Blog <sup>🔗</sup>
+          Blog{" "}
+          <sup>
+            <span
+              role="img"
+              aria-label="External Link - will open in a new tab!"
+            >
+              🔗
+            </span>
+          </sup>
         </a>
       </li>
     </StyledLinks>
