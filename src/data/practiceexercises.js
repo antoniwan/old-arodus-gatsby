@@ -28,8 +28,8 @@ export default [
   },
   {
     name: `Animating page transitions personal website example`,
-    source_code: `https://github.com/antoniwan/antonio-bot`,
-    live_preview: `https://upbeat-engelbart-b20100.netlify.com/`,
+    source_code: `https://github.com/antoniwan/arodus-personal-website`,
+    live_preview: `https://blissful-sammet-588a1d.netlify.com/`,
     tags: [`incomplete`, `api`, `back-end`, `front-end`, `react`],
     description: `Practicing React front-end best practices and transition animations using React Emotion. Hosted on Netlify.`,
   },
