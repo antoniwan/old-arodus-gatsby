@@ -84,6 +84,40 @@ const StyledItem = styled.li`
     }
     margin-bottom: 0.5rem;
   }
+  .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.2rem;
+
+    span {
+      font-size: 1.1rem;
+      background-color: var(--color-black);
+      color: var(--color-white);
+      border-radius: 5px;
+      padding: 0.1rem 0.5rem;
+      margin: 0.2rem;
+      text-align: center;
+      font-style: italic;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+        transition: all 0.5s;
+      }
+
+      &.incomplete {
+        background-color: var(--color-red);
+      }
+      &.design {
+        background-color: var(--color-blue);
+      }
+      &.react {
+        background-color: #61dafb;
+        color: var(--color-black);
+      }
+    }
+  }
 
   @media (min-width: 1024px) {
     .heading {
@@ -117,6 +151,11 @@ const ProjectList = ({ projects }) => {
           </span>
         </div>
         <p className="project-description">{description}</p>
+        <div className="tags">
+          {tags.map(t => (
+            <span className={t}>{t}</span>
+          ))}
+        </div>
       </StyledItem>
     )
   })

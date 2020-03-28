@@ -8,6 +8,8 @@
   --color-pink: #eb5854;
   --max-container-width: 750px;
   --color-light-gray: #cccccc;
+  --color-red: #ff4136;
+  --color-blue: #0074d9;
 }
 
 ::selection {
