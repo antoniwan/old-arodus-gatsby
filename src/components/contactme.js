@@ -17,8 +17,8 @@ const StyledContactMe = styled.div`
 export default function ContactMe() {
   return (
     <StyledContactMe>
-      <p>Need help with a project? Contact me through the links below.</p>
       <p>
+        Want assistance with a project? Contact me through the links below.
         Still here? Check out the sick{" "}
         <a
           target="_blank"
@@ -35,7 +35,7 @@ export default function ContactMe() {
         >
           salsa
         </a>{" "}
-        playlists I created for you. Thank you for visiting!
+        playlists I created for you, and thanks for visiting!
       </p>
 
       <SocialIcons />
