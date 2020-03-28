@@ -27,7 +27,7 @@ export default [
     description: `Practicing React front-end best practices, local storage usage and fallbacks, and working with JavaScript dates and times. Hosted on Netlify.`,
   },
   {
-    name: `Animating page transitions - personal website example`,
+    name: `Animating page transitions personal website example`,
     source_code: `https://github.com/antoniwan/antonio-bot`,
     live_preview: `https://upbeat-engelbart-b20100.netlify.com/`,
     tags: [`incomplete`, `api`, `back-end`, `front-end`, `react`],

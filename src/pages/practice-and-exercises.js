@@ -1,5 +1,4 @@
 import React from "react"
-
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,29 +19,105 @@ const StyledPracticeExercises = styled.div`
       padding: 1rem 2rem;
     }
   }
+
+  button {
+    border: 2px solid var(--color-pink);
+    border-radius: 30px;
+    background: var(--color-white);
+    padding: 5px 10px;
+    margin: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    padding: 0.6rem 1.6rem;
+    transition: all 0.2s;
+  }
+
+  .back-to-top {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    .back-to-top {
+      display: none;
+    }
+  }
+`
+
+const StyledItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 2rem 1rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    opacity: 0.9;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 100;
+    opacity: 0.4;
+    margin: 0;
+  }
+
+  .heading {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .links {
+    a {
+      font-size: 1.4rem;
+      margin-right: 10px;
+    }
+    margin-bottom: 0.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .heading {
+      grid-template-columns: 1fr 200px;
+    }
+    .links {
+      text-align: right;
+      margin-left: 10px;
+    }
+  }
 `
 
 const ProjectList = ({ projects }) => {
   const listItems = projects.map(project => {
     const { name, live_preview, source_code, tags, description } = project
     return (
-      <li key={name}>
-        <h3>{name}</h3>
-        <span className="tags">{tags}</span>
-        <span className="links">
-          {live_preview && (
-            <a href={live_preview} target="_blank" rel="noopener noreferrer">
-              Live Preview
-            </a>
-          )}
-          {source_code && (
-            <a href={source_code} target="_blank" rel="noopener noreferrer">
-              Source Code
-            </a>
-          )}
-        </span>
-        <span className="project-description">{description}</span>
-      </li>
+      <StyledItem key={name}>
+        <div className="heading">
+          <h3>{name}</h3>
+          <span className="links">
+            {live_preview && (
+              <a href={live_preview} target="_blank" rel="noopener noreferrer">
+                Live Preview
+              </a>
+            )}
+            {source_code && (
+              <a href={source_code} target="_blank" rel="noopener noreferrer">
+                Source Code
+              </a>
+            )}
+          </span>
+        </div>
+        <p className="project-description">{description}</p>
+      </StyledItem>
     )
   })
   return <ul> {listItems} </ul>
@@ -54,8 +129,9 @@ const PracticeExercisesPage = () => (
     <StyledPracticeExercises>
       <h2>Practice & Exercises</h2>
       <p>
-        Most of these "projects" are incomplete. However, they all served their
-        purpose for me to learn a specific something or as proofs-of-concept.
+        Most of these projects are not feature complete. However, they all
+        served their purpose for me to learn a specific something or as
+        proofs-of-concept.
       </p>
       <p>
         I'll be uploading many of these now that I'm on parental leave and have
@@ -63,6 +139,15 @@ const PracticeExercisesPage = () => (
       </p>
 
       <ProjectList projects={practiceExercises} />
+
+      <button
+        className="back-to-top"
+        onClick={() => {
+          window.scrollTo(0, 0)
+        }}
+      >
+        Back to top
+      </button>
     </StyledPracticeExercises>
   </Layout>
 )
