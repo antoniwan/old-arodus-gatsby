@@ -4,6 +4,9 @@ module.exports = {
     description: `Fullstack developer, accidental cofounder and manager, living in Miami, Florida. I know what I'm doing 60% of the time.`,
     author: `@antoniwan`,
     siteUrl: `https://antoniorodriguez.us`,
+    url: `https://antoniorodriguez.us`,
+    image: `/images/picture-flowers.jpg`,
+    twitterUsername: `@antoniwan`,
   },
   plugins: [
     {
