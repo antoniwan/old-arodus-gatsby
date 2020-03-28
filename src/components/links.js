@@ -100,6 +100,15 @@ const Links = ({ isOpen, handleClick }) => {
           </sup>
         </a>
       </li>
+      <li>
+        <Link
+          to="/practice-and-exercises"
+          onClick={handleClick}
+          activeClassName="active"
+        >
+          Practice
+        </Link>
+      </li>
     </StyledLinks>
   )
 }
