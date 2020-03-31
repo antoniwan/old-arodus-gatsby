@@ -31,7 +31,7 @@ export default [
     source_code: `https://github.com/antoniwan/goalzilla`,
     live_preview: `https://goalzilla.netlify.com/`,
     tags: [`incomplete`, `api`, `back-end`, `front-end`, `react`, `design`],
-    description: `Practicing React front-end best practices, local storage usage and fallbacks, and working with JavaScript dates and times. Hosted on Netlify.`,
+    description: `Practicing React state management (useReducer and Context), local storage usage and fallbacks, and working with JavaScript dates and times. Hosted on Netlify.`,
   },
   {
     name: `Animated page transitions and motion personal website example`,
