@@ -84,6 +84,15 @@ const Links = ({ isOpen, handleClick }) => {
         </Link>
       </li>
       <li>
+        <Link
+          to="/practice-and-exercises"
+          onClick={handleClick}
+          activeClassName="active"
+        >
+          Practice
+        </Link>
+      </li>
+      <li>
         <a
           href="https://abunchofideas.com/?utm_source=website&utm_medium=link&utm_campaign=arodus"
           target="_blank"
@@ -99,15 +108,6 @@ const Links = ({ isOpen, handleClick }) => {
             </span>
           </sup>
         </a>
-      </li>
-      <li>
-        <Link
-          to="/practice-and-exercises"
-          onClick={handleClick}
-          activeClassName="active"
-        >
-          Practice
-        </Link>
       </li>
     </StyledLinks>
   )

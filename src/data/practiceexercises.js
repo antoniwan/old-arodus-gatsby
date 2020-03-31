@@ -1,5 +1,12 @@
 export default [
   {
+    name: `Vanilla JavaScript image gallery exercise`,
+    source_code: `https://priceless-saha-d9418d.netlify.com/gallery.js`,
+    live_preview: `https://priceless-saha-d9418d.netlify.com/`,
+    tags: [`js`],
+    description: `Tiny Image Gallery "plugin". Thanks Wes Bos!`,
+  },
+  {
     name: `Animated Play/Pause toggle buttons`,
     source_code: `https://codepen.io/antoniwan/pen/LQXKQr`,
     live_preview: `https://codepen.io/antoniwan/full/LQXKQr`,
