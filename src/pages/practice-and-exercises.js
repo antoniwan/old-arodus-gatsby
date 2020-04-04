@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -37,8 +37,22 @@ const StyledPracticeExercises = styled.div`
     transition: all 0.2s;
   }
 
+  label {
+    font-style: italic;
+  }
+
   .back-to-top {
     margin-top: 2rem;
+  }
+
+  .exercise-list {
+    &.showing {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+    &.hidden {
+      opacity: 0;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -153,7 +167,9 @@ const ProjectList = ({ projects }) => {
         <p className="project-description">{description}</p>
         <div className="tags">
           {tags.map(t => (
-            <span className={t}>{t}</span>
+            <span key={t} className={t}>
+              {t}
+            </span>
           ))}
         </div>
       </StyledItem>
@@ -162,33 +178,58 @@ const ProjectList = ({ projects }) => {
   return <ul> {listItems} </ul>
 }
 
-const PracticeExercisesPage = () => (
-  <Layout>
-    <SEO title="Practice and Exercises" />
-    <StyledPracticeExercises>
-      <h2>Practice & Exercises</h2>
-      <p>
-        Most of these projects are not feature complete. However, they all
-        served their purpose for me to learn a specific something or as
-        proofs-of-concept.
-      </p>
-      <p>
-        I'll be uploading many of these now that I'm on parental leave and have
-        the time to do so!
-      </p>
+const PracticeExercisesPage = () => {
+  const [Understood, setUnderstood] = useState(
+    localStorage.getItem("understood_practice_exercises") || false
+  )
 
-      <ProjectList projects={practiceExercises} />
+  function handleCheckboxClick(e) {
+    setUnderstood(true)
+    localStorage.setItem("understood_practice_exercises", true)
+    localStorage.setItem("understood_practice_exercises_on", new Date())
+  }
 
-      <button
-        className="back-to-top"
-        onClick={() => {
-          window.scrollTo(0, 0)
-        }}
-      >
-        Back to top
-      </button>
-    </StyledPracticeExercises>
-  </Layout>
-)
+  return (
+    <Layout>
+      <SEO title="Practice and Exercises" />
+      <StyledPracticeExercises>
+        <h2>Practice & Exercises</h2>
+        <p>
+          Most of these exercises are not feature complete and I never intended
+          for them to be. They each served their purpose for me to learn a
+          specific something or as proofs-of-concept.
+        </p>
+        <p>
+          I'll be uploading many of these now that I'm on parental leave and
+          have the time to do so!
+        </p>
+
+        <p className="checkbox">
+          <label>
+            <input
+              type="checkbox"
+              onClick={handleCheckboxClick}
+              defaultChecked={Understood}
+              disabled={Understood}
+            />
+            I understand Antonio, show me the practice exercises.
+          </label>
+        </p>
+
+        <div className={`exercise-list ${Understood ? "showing" : "hidden"}`}>
+          <ProjectList projects={practiceExercises} />
+          <button
+            className="back-to-top"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }}
+          >
+            Back to top
+          </button>
+        </div>
+      </StyledPracticeExercises>
+    </Layout>
+  )
+}
 
 export default PracticeExercisesPage
