@@ -210,7 +210,7 @@ const PracticeExercisesPage = () => {
               type="checkbox"
               onClick={handleCheckboxClick}
               defaultChecked={Understood}
-              disabled={Understood}
+              disabled={Understood ? true : false}
             />
             I understand Antonio, show me the practice exercises.
           </label>
