@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -179,15 +179,16 @@ const ProjectList = ({ projects }) => {
 }
 
 const PracticeExercisesPage = () => {
-  const [Understood, setUnderstood] = useState(
-    localStorage.getItem("understood_practice_exercises") || false
-  )
+  const [Understood, setUnderstood] = useState(false)
 
   function handleCheckboxClick(e) {
     setUnderstood(true)
     localStorage.setItem("understood_practice_exercises", true)
-    localStorage.setItem("understood_practice_exercises_on", new Date())
   }
+
+  useEffect(() => {
+    setUnderstood(localStorage.getItem("understood_practice_exercises"))
+  }, [])
 
   return (
     <Layout>
@@ -206,13 +207,19 @@ const PracticeExercisesPage = () => {
 
         <p className="checkbox">
           <label>
-            <input
-              type="checkbox"
-              onClick={handleCheckboxClick}
-              defaultChecked={Understood}
-              disabled={Understood ? true : false}
-            />
-            I understand Antonio, show me the practice exercises.
+            {!Understood && (
+              <input
+                type="checkbox"
+                onClick={handleCheckboxClick}
+                defaultChecked={Understood}
+                disabled={Understood ? true : false}
+              />
+            )}
+            I understand Antonio
+            {!Understood && (
+              <React.Fragment>, show me the practice exercises</React.Fragment>
+            )}
+            .
           </label>
         </p>
 
