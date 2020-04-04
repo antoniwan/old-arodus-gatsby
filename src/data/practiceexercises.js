@@ -1,5 +1,12 @@
 export default [
   {
+    name: `Vanilla JavaScript image gallery exercise`,
+    source_code: `https://priceless-saha-d9418d.netlify.com/gallery.js`,
+    live_preview: `https://priceless-saha-d9418d.netlify.com/`,
+    tags: [`js`],
+    description: `Tiny Image Gallery "plugin". Thanks Wes Bos!`,
+  },
+  {
     name: `Animated Play/Pause toggle buttons`,
     source_code: `https://codepen.io/antoniwan/pen/LQXKQr`,
     live_preview: `https://codepen.io/antoniwan/full/LQXKQr`,
@@ -24,7 +31,7 @@ export default [
     source_code: `https://github.com/antoniwan/goalzilla`,
     live_preview: `https://goalzilla.netlify.com/`,
     tags: [`incomplete`, `api`, `back-end`, `front-end`, `react`, `design`],
-    description: `Practicing React front-end best practices, local storage usage and fallbacks, and working with JavaScript dates and times. Hosted on Netlify.`,
+    description: `Practicing React state management (useReducer and Context), local storage usage and fallbacks, and working with JavaScript dates and times. Hosted on Netlify.`,
   },
   {
     name: `Animated page transitions and motion personal website example`,
