@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import brands from "../data/brands"
+import ContactMe from "../components/contactme"
 
 const StyledBrandItem = styled.div`
   display: flex;
@@ -77,7 +78,7 @@ const WorkPage = () => {
 
         <BrandList />
 
-        <p>Let's work together!</p>
+        <ContactMe />
       </StyledWork>
     </Layout>
   )

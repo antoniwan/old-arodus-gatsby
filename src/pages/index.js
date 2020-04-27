@@ -2,16 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ContactMe from "../components/contactme"
 import picture from "../images/profile-picture.jpg"
+import SocialIcons from "../components/socialicons"
 
 const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 
   p {
-    text-align: center;
+    text-align: left;
   }
 
   img {
@@ -45,21 +45,27 @@ const IndexPage = () => (
         alt="Antonio Rodriguez, wearing a pink dress shirt and horn-rimmed glasses and a smile."
       />
       <p>
-        Hello! My name is Antonio, and I enjoy building things for the web as a
-        software engineer or as a team leader and mentor. Some years ago, a
-        friend and I founded a software development company and later sold it.
+        Hello! My name is Antonio, and I enjoy building software and web
+        applications. Some years ago, a friend and I founded a software
+        development company and later sold it. The experience was more
+        educational than lucrative.
+      </p>
+      <p>
         Aside from work, I love being a dad, and I wish I would{" "}
         <a
           href="https://abunchofideas.com/?utm_source=website&utm_medium=link&utm_campaign=arodus"
           target="_blank"
           rel="noopener noreferrer"
         >
-          write more
-        </a>
-        . Cooking, playing basketball, shredding on my guitar and maintaining a
-        healthy lifestyle are my favorite hobbies.
+          write
+        </a>{" "}
+        more. Cooking for my family, playing basketball, shredding on my
+        guitars, and maintaining a healthy lifestyle through exercise and
+        nutritive food are currently my favorite hobbies.
       </p>
-      <ContactMe />
+
+      <p>Thanks for visiting!</p>
+      <SocialIcons />
     </StyledAbout>
   </Layout>
 )

@@ -15,7 +15,7 @@ import { GoMail } from "react-icons/go"
 const StyledSocialIcons = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 
   li {
@@ -110,7 +110,7 @@ export default function SocialIcons() {
         </a>
       </li>
       <li>
-        <a href="mailto:hello@antoniorodriguez.us">
+        <a href="mailto:hello@arod.us">
           <GoMail />
         </a>
       </li>

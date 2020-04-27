@@ -18,24 +18,7 @@ export default function ContactMe() {
   return (
     <StyledContactMe>
       <p>
-        Want assistance with a project? Contact me through the links below.
-        Still here? Check out the sick{" "}
-        <a
-          target="_blank"
-          href="https://open.spotify.com/user/antoniwan/playlist/18Fchy5u9YkOvUqtAKqMj1"
-          rel="noopener noreferrer"
-        >
-          classical
-        </a>{" "}
-        and{" "}
-        <a
-          target="_blank"
-          href="https://open.spotify.com/user/antoniwan/playlist/7gqDk94DAF0O5ifBuKAlVH"
-          rel="noopener noreferrer"
-        >
-          salsa
-        </a>{" "}
-        playlists I created for you, and thanks for visiting!
+        Contact me through any of the social platforms below to collaborate!
       </p>
 
       <SocialIcons />
