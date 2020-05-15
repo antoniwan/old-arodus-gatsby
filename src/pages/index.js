@@ -3,15 +3,16 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import picture from "../images/profile-picture.jpg"
+import picture2x from "../images/profile-picture-2x.jpg"
 import SocialIcons from "../components/socialicons"
 
 const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   p {
-    text-align: left;
+    text-align: center;
   }
 
   img {
@@ -19,19 +20,19 @@ const StyledAbout = styled.div`
     width: 300px;
     object-fit: cover;
     margin-bottom: 3rem;
-    border-radius: 5px;
+    border-radius: 300px;
     margin-top: 1rem;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: 1024px) {
     img {
       margin-top: 0;
-      border-radius: 25px;
+      border-radius: 300px;
       height: 300px;
       width: 300px;
-      margin-left: 0;
-      margin-right: 0;
     }
   }
 `
@@ -41,7 +42,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <StyledAbout>
       <img
-        src={picture}
+        srcSet={`${picture} 1x, ${picture2x} 2x`}
         alt="Antonio Rodriguez, wearing a pink dress shirt and horn-rimmed glasses and a smile."
       />
       <p>

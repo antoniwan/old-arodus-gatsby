@@ -13,12 +13,23 @@ export default [
   },
   {
     title: "PHP",
-    desc: "server-side programming langauge",
+    desc: "server-side programming language",
     flags: {
       prod: true,
       learning: false,
       hobby: false,
-      legacy: true,
+      legacy: false,
+      hidden: false,
+    },
+  },
+  {
+    title: "Laravel",
+    desc: "sick PHP framework",
+    flags: {
+      prod: true,
+      learning: false,
+      hobby: false,
+      legacy: false,
       hidden: false,
     },
   },

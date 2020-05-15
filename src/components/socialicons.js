@@ -15,12 +15,12 @@ import { GoMail } from "react-icons/go"
 const StyledSocialIcons = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 
   li {
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 3rem;
+    padding: 1.5rem;
     padding-bottom: 0;
   }
 
@@ -28,7 +28,8 @@ const StyledSocialIcons = styled.ul`
     width: 100%;
 
     li {
-      padding: 1rem;
+      font-size: 2rem;
+      padding: 1.5rem;
       padding-bottom: 0;
     }
   }
