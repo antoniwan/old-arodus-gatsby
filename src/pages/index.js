@@ -46,16 +46,30 @@ const IndexPage = () => (
         alt="Antonio Rodriguez, wearing a pink dress shirt and horn-rimmed glasses and a smile."
       />
       <p>
-        Hello! My name is Antonio, and I enjoy building software and web
-        applications. Some years ago, a friend and I founded a web development
-        company and later sold it. The experience was more educational than
-        lucrative.
+        Hi, my name is Antonio, and I enjoy leading teams and building products
       </p>
       <p>
-        Aside from work, I love being a dad, and I wish I would write more.
-        Cooking for my family, playing basketball, recording guitar songs, and
-        maintaining a healthy lifestyle through exercise, mental health therapy,
-        and nutritive food are currently my favorite hobbies.
+        About a decade ago, a friend and I founded a web development company and
+        later sold it to a marketing firm. This entrepreneurship experience was
+        more educational than lucrative, quickly orienting me on how essential
+        ethics, morals, and empathy are if I aspire to be a just leader and
+        promote a healthy environment at work.
+      </p>
+
+      <p>
+        Since then, I've worked as a Chief Technology Officer, an Engineering
+        Manager, a Director, and an Individual Contributor to many teams,
+        projects and products with various levels of effort and impact.
+        Currently, I'm exploring different disciplines and have taken on a
+        Technical Product Owner role at a Global tools company. Which is my
+        favorite role? I honestly do not know, they all have pros and cons, and
+        I absolutely enjoy them.
+      </p>
+
+      <p>
+        Aside from work, I put most of my efforts into being a loving,
+        conscious, and involved parent, a better husband, and a healthier
+        person, mentally and physically.
       </p>
 
       <p>Thanks for visiting!</p>
