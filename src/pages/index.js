@@ -52,17 +52,10 @@ const IndexPage = () => (
         educational than lucrative.
       </p>
       <p>
-        Aside from work, I love being a dad, and I wish I would{" "}
-        <a
-          href="https://abunchofideas.com/?utm_source=website&utm_medium=link&utm_campaign=arodus"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          write
-        </a>{" "}
-        more. Cooking for my family, playing basketball, shredding on my
-        guitars, and maintaining a healthy lifestyle through exercise and
-        nutritive food are currently my favorite hobbies.
+        Aside from work, I love being a dad, and I wish I would write more.
+        Cooking for my family, playing basketball, recording guitar songs, and
+        maintaining a healthy lifestyle through exercise, mental health therapy,
+        and nutritive food are currently my favorite hobbies.
       </p>
 
       <p>Thanks for visiting!</p>

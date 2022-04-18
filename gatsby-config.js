@@ -37,7 +37,6 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Antonio Rodriguez`,
-        short_name: `arod.us`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#eb5854`,

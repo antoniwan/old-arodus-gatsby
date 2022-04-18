@@ -69,46 +69,6 @@ const Links = ({ isOpen, handleClick }) => {
           About
         </Link>
       </li>
-      <li>
-        <Link
-          to="/skillset-and-tools"
-          onClick={handleClick}
-          activeClassName="active"
-        >
-          Skillsets & Tools
-        </Link>
-      </li>
-      <li>
-        <Link to="/work" onClick={handleClick} activeClassName="active">
-          Work
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/practice-and-exercises"
-          onClick={handleClick}
-          activeClassName="active"
-        >
-          Practice
-        </Link>
-      </li>
-      <li>
-        <a
-          href="https://abunchofideas.com/?utm_source=website&utm_medium=link&utm_campaign=arodus"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Blog{" "}
-          <sup>
-            <span
-              role="img"
-              aria-label="External Link - will open in a new tab!"
-            >
-              🔗
-            </span>
-          </sup>
-        </a>
-      </li>
     </StyledLinks>
   )
 }

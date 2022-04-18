@@ -1,30 +1,7 @@
 export default [
   {
-    title: "MacBook Pro",
-    desc: "15-inch Intel Core i9",
-    flags: {
-      prod: false,
-      learning: false,
-      hobby: true,
-      legacy: false,
-      hidden: false,
-      favorite: true,
-    },
-  },
-  {
     title: "PHP",
     desc: "server-side programming language",
-    flags: {
-      prod: true,
-      learning: false,
-      hobby: false,
-      legacy: false,
-      hidden: false,
-    },
-  },
-  {
-    title: "Laravel",
-    desc: "sick PHP framework",
     flags: {
       prod: true,
       learning: false,
@@ -72,7 +49,7 @@ export default [
     title: "Gulp",
     desc: "automation toolkit (task runner)",
     flags: {
-      prod: true,
+      prod: false,
       learning: false,
       hobby: false,
       legacy: true,
@@ -83,7 +60,7 @@ export default [
     title: "Grunt",
     desc: "JavaScript Task Runner",
     flags: {
-      prod: true,
+      prod: false,
       learning: false,
       hobby: false,
       legacy: true,

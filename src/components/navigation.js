@@ -77,18 +77,6 @@ const Navigation = () => {
   return (
     <StyledNavigation>
       <Skullface />
-
-      <BurgerMenuIcon isOpen={isOpen} handleClick={toggleMenu} />
-
-      <nav className={`mobile-menu  ${isOpen ? "is-open" : ""}`}>
-        <div className={`${isOpen ? "is-open" : ""} links-wrapper`}>
-          <Links isOpen={isOpen} handleClick={handleClick} />
-        </div>
-      </nav>
-
-      <nav className={`desktop-menu  ${isOpen ? "is-open" : ""}`}>
-        <Links isOpen={isOpen} handleClick={handleClick} />
-      </nav>
     </StyledNavigation>
   )
 }

@@ -111,7 +111,7 @@ export default function SocialIcons() {
         </a>
       </li>
       <li>
-        <a href="mailto:hello@arod.us">
+        <a href="mailto:antoniorodriguez@hey.com">
           <GoMail />
         </a>
       </li>
