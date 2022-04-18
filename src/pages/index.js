@@ -43,10 +43,10 @@ const IndexPage = () => (
     <StyledAbout>
       <img
         srcSet={`${picture} 1x, ${picture2x} 2x`}
-        alt="Antonio Rodriguez, wearing a pink dress shirt and horn-rimmed glasses and a smile."
+        alt="Antonio Rodriguez, wearing a pink dress shirt and horn-rimmed glasses, and a smile."
       />
       <p>
-        Hi, my name is Antonio, and I enjoy leading teams and building products
+        Hi, my name is Antonio, and I enjoy leading teams and building products.
       </p>
       <p>
         About a decade ago, a friend and I founded a web development company and
