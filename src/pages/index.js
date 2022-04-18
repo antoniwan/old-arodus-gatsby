@@ -47,9 +47,9 @@ const IndexPage = () => (
       />
       <p>
         Hello! My name is Antonio, and I enjoy building software and web
-        applications. Some years ago, a friend and I founded a software
-        development company and later sold it. The experience was more
-        educational than lucrative.
+        applications. Some years ago, a friend and I founded a web development
+        company and later sold it. The experience was more educational than
+        lucrative.
       </p>
       <p>
         Aside from work, I love being a dad, and I wish I would write more.
